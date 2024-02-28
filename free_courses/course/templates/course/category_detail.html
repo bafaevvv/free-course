@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="containers">
+    <h4><a href="{% url 'course:index' %}">{{ category_list.title }}</a></h4>
+    <div class="rows">
+        {% for query in course_set.all %}
+        <a style="display: flex;" href="/{{ query.id }}">
+            {{ query.title }}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Freecc
+{% endblock title %}
+
+{% block content %}
+<main>
+      <div class="present_part">
+            <div>
+                  <img src="../static/images/freecc_1.png" alt="">
+            </div>
+
+            <div class="mini_container1">
+                  <h1>Did you make a wish?</h1>
+                  <p class="first_text1">
+                        Time to make it come true. Get the courses on your wishlist and take the first step toward
+                        your goals.
+                  </p>
+                  <h2>Slow and steady</h2>
+                  <p class="second_text1">
+                        Try learning just 5–10 minutes a day. Continue your course and reach your peak potential.
+                  </p>
+            </div>
+      </div>
+
+      <!-- recommended section -->
+
+      <div class="recommended">
+            <h2>Recommended for you</h2>
+            {% for item in course_list|slice:"0:1" %}
+            <div class="rec_page">
+                  <div class="rec_img">
+                        <img src="{{ item.img.url }}" alt="">
+                  </div>
+                  <div class="desc_section">
+                        <h3>{{ item.title }}</h3>
+                        <p class="rec-text-1">{{ item.desc }}</p>
+                        <button><a href="/{{ item.id }}">Get Course</a></button>
+                  </div>
+            </div>
+            {% endfor %}
+
+      </div>
+
+      <!-- recommended section end -->
+
+      <div class="course_block">
+            <h2>Let's start learning</h2>
+            <div class="blocks">
+                  {% for item in course_list %}
+                  <div class="block">
+                        <img src="{{ item.img.url }}" alt="">
+                        <div class="block-content">
+                              <h3>{{ item.title|slice:"0:22"}}...</h3>
+                              <p>{{ item.desc|slice:"0:25"}}...</p>
+                              <button><a href="/{{ item.id }}">Get Course</a></button>
+                        </div>
+                  </div>
+                  {% endfor %}
+            </div>
+      </div>
+</main>
+{% endblock %}

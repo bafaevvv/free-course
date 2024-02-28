@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(99, 98, 98, 0.35) 0px 3px 3px;
+    z-index: 10000;
+}
+
+header .logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul.nav {
+    list-style: none;
+    display: flex;
+}
+
+header .menu ul.nav li {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+
+
+header .menu ul.nav li a {
+    letter-spacing: 2px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-decoration: none;
+    padding: 6px 0;
+}
+
+header .menu ul.nav li:hover {
+    border-bottom: 2px solid #040404;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+/* main */
+
+
+main {
+    width: 95%;
+    margin: 35px;
+    margin-top: 30px;
+}
+
+main .present_part img {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-color: #696969;
+    border-radius: 20px;
+}
+
+
+main .mini_container1 {
+    width: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 7.2rem;
+    top: 11rem;
+    max-width: 44rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .08), 0 4px 12px rgba(0, 0, 0, .08);
+    padding: 2.4rem;
+}
+
+main .mini_container1 h1 {
+    padding: 0;
+    margin-bottom: 0.8rem;
+}
+
+main .mini_container1 .first_text1 {
+    padding: 0;
+    margin-bottom: 0.8rem;
+}
+
+main .mini_container1 .second_text1 {
+    padding: 0;
+    margin-bottom: 0.8rem;
+}
+
+main .mini_container1 h2 {
+    padding: 0;
+    margin-bottom: 0.8rem;
+}
+
+
+.recommended h2 {
+    margin: 35px;
+    margin-top: 70px;
+    font-size: 35px;
+
+}
+
+.recommended .rec_page {
+    height: 350px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 8px 20px rgba(0, 0, 0, .08);
+    transition: opacity 500ms ease;
+}
+
+.recommended .rec_page:hover {
+    background-color: #f7f6f6;
+    transition: opacity 1000ms ease;
+}
+
+.recommended .rec_page img {
+    height: 300px;
+    position: relative;
+    float: left;
+    width: 40%;
+    padding: 20px;
+    margin: 8px;
+}
+
+.recommended .rec_page .desc_section {
+    position: relative;
+    float: right;
+    width: 50%;
+    padding: 20px;
+    margin: 8px;
+    color: #000000;
+}
+
+.recommended .rec_page .desc_section h3 {
+    position: relative;
+    font-size: 40px;
+}
+
+.recommended .rec_page .desc_section .rec-text-1 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.recommended .rec_page .desc_section .rec-text-2 {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.recommended .rec_page .desc_section button {
+    width: 92%;
+    height: 36px;
+    border-width: thin;
+    margin-top: 60px;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.recommended .rec_page .desc_section button a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.course_block h2 {
+    margin: 35px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.course_block .block_title a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.course_block .blocks {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.course_block .blocks .block {
+    margin-top: 30px;
+    width: 18%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 8px 20px rgba(0, 0, 0, .08);
+    transition: opacity 500ms ease;
+}
+
+.course_block .blocks .block img {
+    width: 240px;
+    height: 150px;
+    margin: 10px;
+}
+
+.course_block .blocks .block .block-content {
+    margin: 10px;
+    width: 240px;
+}
+
+.course_block .blocks .block .block-content h3 {
+    margin-bottom: 10px;
+}
+
+.course_block .blocks .block .block-content p {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.course_block .blocks .block .block-content button {
+    width: 240px;
+    height: 30px;
+    border: thin;
+    font-size: 18px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+.course_block .blocks .block .block-content button a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.course_block .d-flex input {
+    width: 265px;
+    height: 36px;
+    border-width: thin;
+    margin-left: 35px;
+    margin-top: 35px;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 20px;
+    outline: none;
+}
+
+.course_block .d-flex button {
+    margin-top: 35px;
+    border-radius: 20px;
+    border-width: thin;
+    background-color: white;
+}
+
+.course_block .d-flex button i.fa {
+    font-size: 23px;
+    padding: 10px;
+}
+
+/* course_detail */
+main .container {
+    width: 100%;
+    display: flex;
+    margin-top: 33px;
+}
+
+main .container .container_img {
+    width: 600px;
+}
+
+main .container .container_img img {
+    width: 600px;
+}
+
+main .container .container_content {
+    margin-left: 50px;
+}
+
+main .container .container_content h1 {
+    margin-bottom: 20px;
+}
+
+main .container .container_content p {
+    margin-bottom: 20px;
+}
+
+main .container .container_content button {
+    width: 240px;
+    height: 30px;
+    border: thin;
+    font-size: 18px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+main .container .container_content button a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.category_container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.category_container .row {
+    border: #040404 1px solid;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category_container .row h3 {
+    padding: 10px;
+}
+
+
+.containers {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+
+}
+
+.containers h4 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.containers h4 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.containers .rows a {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border-width: thin;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08), 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+
+
+footer {
+    background-color: #ffffff;
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+
+}
+
+
+footer .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+footer .footer .contact {
+    width: 50%;
+    text-align: -webkit-center;
+    color: #000000;
+    padding: 15px;
+}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="course_block">
+      <h2 class="block_title"><a href="{% url 'course:course' %}">Our All Courses!</a></h2>
+
+      <form class="d-flex" action="{% url 'course:course' %}" method="get">
+            <input type="search" name="search" placeholder="search for anything">
+            <button class="search_button" type="submit">
+                  <i class="fa fa-search"></i>
+            </button>
+      </form>
+
+      <div class="blocks">
+            {% for item in course %}
+            <div class="block">
+                  <img src="{{ item.img.url }}" alt="">
+                  <div class="block-content">
+                        <h3>{{ item.title|slice:"0:22"}}...</h3>
+                        <p>{{ item.desc|slice:"0:25"}}...</p>
+                        <button><a href="/{{ item.id }}">Get Course</a></button>
+                  </div>
+            </div>
+            {% endfor %}
+      </div>
+</div>
+{% endblock %}
